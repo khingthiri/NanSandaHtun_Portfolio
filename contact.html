@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    font-family:times new roman, sans-serif;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 60px;
+    box-shadow: 0 2px 4px rgba(80, 57, 57, 0.1);
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    position: sticky;
+    top: 0;
+}
+.logo:hover{
+    opacity: 0.6;
+    cursor:pointer;
+    transition: opacity 0.2s ease-out;
+    
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    padding: 2px 40px;
+    gap: 50px;
+    list-style: none;
+    font-size: 16px;
+    
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease in-out;
+}
+.nav-links li a:hover{
+    cursor: pointer;
+}
+.hero{
+    padding: 50px 100px 100px 100px;
+}
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #8a8888;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+.container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=submit] {
+    background-color: rgb(97, 181, 246);
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: rgb(72, 147, 180);
+}
+.link a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(97, 181, 246);
+}
+.social_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.social_icon a{
+    color: rgb(36, 83, 120);
+}
+.social_icon a:hover{
+    color: rgb(46, 68, 85);
+    transition: color 0.s ease in-out;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0px -9px 4px -9px #8a8888;
+    
+    
+}
+.footer_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+.footer_text{
+    color: rgb(101, 94, 83); 
+}
+.footer_links a{
+    color: rgb(57, 51, 41);   
+}
+.footer_text{
+    width: 900px;
+    
+}
+.footer_links a:hover{
+    color: rgb(18, 18, 28);
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+           <a href="index.html"><img src="https://www.svgrepo.com/show/453039/bundled-up-female.svg" alt="" height="50px" width="50px"></a>
+        </div> 
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="project.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="https://drive.google.com/file/d/12uywdC12ipvaqWfVSzW9-MWE74LdsUMD/view?usp=sharing">RESUME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="hero">
+        <div class="link">
+            <h2>Let's Get In Touch!</h2>
+            <p>Or by sending an email to <a href="mailto:hteeclaybaw@gmail.com">hteeclaybaw@gmail.com</a>.</p>
+        </div>
+        <!-- Enter code here 2,2,2 ခုမြောက်-->
+        <div class="container">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScYAc-KuFyJlJl1KiDze1X_dhP8HsgUSH7VaMlK9C9kJLJUYg/formResponse" method="POST">
+
+                <label for="fname">Name:</label><br>
+                <input type="text" id="fname" name="entry.847914231" placeholder="Enter your name:" required><br>
+
+                <label for="femail">Email:</label><br>
+                <input type="email" id="femail" name="entry.179146188" placeholder="Enter your email:" required><br>
+
+                <label for="fmessage">Message:</label><br>
+                <textarea id="fmessage" name="entry.812966832" placeholder="Enter you message...." required></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer_text">
+            <h3>Glad to Connect!</h3>
+            <p>Thank you for visiting my portfolio website. I appreciate your interest in my work and I look forward to connecting with you.</p>
+            <p style="font-size: 13px; color: rgb(127, 95, 72); ">@ Nan Sanda Htun, 2026</p>
+        </div>
+
+        <div class="footer_links">
+                <a href="mailto:hteeclaybaw@gmail.com"><i class='fa fa-envelope'></i></a>
+                <a href="https://web.telegram.org/k/"><i class='fa fa-telegram'></i></a>
+                <a href="https://www.linkedin.com/in/nan-sanda-htun-863358420/"><i class='fa fa-linkedin'></i></a>
+                <a href="https://www.facebook.com/han.na.559878"><i class='fa fa-facebook'></i></a>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
